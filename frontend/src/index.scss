@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+$header-color: #2C1320;
+$footer-color: #56667A;
+$background-main-color: #ffffff;
+$section-color: hsl(0deg 0% 96%);
+$text-color: #212124;
+$main-color: #3b86cc;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 1080px;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: rgb(39, 37, 37);
+    direction: rtl;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $background-main-color;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+
+  .outlet{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 80px);
+    margin-top: 80px;
+  }
+}
+
+
+
+section{
+    width: 100%;
+    // height: calc(100% - 60px);
+    margin-top: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $section-color;
+    border: rgb(216, 216, 216) solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+a, a:visited {
+    color: rgb(71, 71, 71);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  text-align: right; 
+  border: #bfbfbf 1px solid;
+}
+
+// label,
+button {
+  text-align: center;
+  margin-top: 1rem;
+  background-color: $main-color;
+  color:#ffffff;
+  &:hover {
+    cursor: pointer;
+    color:#d6d6d6;
+    }
+}
+
+button {
+  padding: 0.5rem;
+}
+
+input{
+    text-align: right; 
+    // width: 120px;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: rgb(36, 36, 36);
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: rgb(189, 255, 189);
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: rgb(247, 92, 92);
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: rgb(235, 112, 112);
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+
+.flexGrow {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}

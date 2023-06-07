@@ -1,0 +1,38 @@
+.house_edit{
+    line-height: 0;
+}
+
+.house_details{
+    justify-items: center;
+    position: absolute;
+    // width: 60%;
+    height: fit-content;
+    max-height: 90%;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin: auto auto;
+    border-radius: 8px;
+    max-width: 680px;
+
+    
+
+    .no_data{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .house_field{
+        h2{
+            color: #3b86cc;
+        }
+        text-align: center;
+    }
+}
